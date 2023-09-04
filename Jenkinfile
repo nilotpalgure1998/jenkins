@@ -9,7 +9,7 @@ pipeline {
     }
      stage ('Publish') {
       steps {
-        withDockerRegistry([credentialsID: "nilotpal123", url: ""]) {
+        withDockerRegistry([credentialsId: "nilotpal123", url: ""]) {
         sh 'docker push nilotpal123/jenkins:""$BUILD_ID""'
         }
       } 

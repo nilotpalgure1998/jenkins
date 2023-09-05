@@ -1,5 +1,5 @@
 FROM ubuntu:18.04  
-LABEL maintainer="" 
+LABEL maintainer="nilotpal_gure" 
 RUN  apt-get -y update && apt-get -y install nginx
 COPY default /etc/nginx/sites-available/default
 COPY index.html /usr/share/nginx/html/index.html
